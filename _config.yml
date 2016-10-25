@@ -1,0 +1,9 @@
+name: PC Electric & Solar Pty Ltd
+phone: 0455 555 555
+url: http://www.pcelectricandsolar.com.au
+description: Domestic and commercial electrical and solar installations and repairs.
+
+markdown: kramdown
+gems:
+  - jekyll-sitemap
+  - jekyll-seo-tag

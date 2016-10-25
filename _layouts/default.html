@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{% if page.url == "/" %}
+              {{ site.name }}
+            {% else %}
+              {{ page.title | append: " | " | append: site.name }}
+            {% endif %}
+    </title>
+    <script type="text/javascript" src="https://use.fontawesome.com/0523816ffe.js"></script>
+    <link type="text/css" rel="stylesheet" href="/resources/main.css">
+    <!-- <link rel="icon" type="image/png" href="/img/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="/img/favicon-16x16.png" sizes="16x16"> -->
+    {% seo title=false %}
+  </head>
+  <body>
+    <div id="pageWrapper">
+      <header>
+        <noscript><div id="noscript">JavaScript is turned off. Please <a href="http://enable-javascript.com/" target="_blank">enable JavaScript</a> for full use of this site.</div></noscript>
+        <div id="masthead">
+          <div id="heading">
+            <a href="/"><h1>{{ site.name }}</h1></a>
+          </div>
+          <div id="contactNo">
+            <h1>{{ site.phone }}</h1>
+          </div>
+        </div>
+        <nav id="mainMenu">
+          <div id="navIcon">
+            <a href="#"><i class="fa fa-bars"></i></a>
+          </div>
+          <ul>
+            {% assign navPages = site.pages | sort: 'navId' %}
+            {% for i in navPages %}
+              {% if i.navId %}
+                <li><a href="{{ i.url }}"
+                {% if page.url contains i.url %}
+                  {% if i.url != "/" and page.url.size > 1 %}
+                    class="selected"
+                  {% endif %}
+                  {% if i.url == page.url %}
+                    class="selected"
+                  {% endif %}
+                {% endif %}
+                >{{ i.title }}</a></li>
+              {% endif %}
+            {% endfor %}
+          </ul>
+        </nav><!-- /mainMenu -->
+      </header>
+      <div id="contentWrapper">
+        <div id="page">
+          {{ content }}
+        </div>
+      </div><!-- /contentWrapper-->
+      <footer>
+        <div id=footerContainer>
+          &copy; {{ site.name }} &bull; Site design by <a href="http://syntheta.se" target="_blank">D. Allen</a>
+        </div> <!--/footerContainer -->
+      </footer>
+    </div> <!--/pageWrapper-->
+  </body>
+  <!--Loads non-render-critical JavaScript after the page has been rendered-->
+  <script type="text/javascript">
+    function loadScriptPostRender() {
+      var element = document.createElement("script");
+      element.src = "https://code.jquery.com/jquery-1.11.0.min.js";
+      element.type = "text/javascript";
+      element.async = false;
+      document.body.appendChild(element);
+
+      element = document.createElement("script");
+      element.src = "/resources/main.js";
+      element.type = "text/javascript";
+      element.async = false;
+      document.body.appendChild(element);
+    }
+    if (window.addEventListener)
+      window.addEventListener("load", loadScriptPostRender, false);
+    else if (window.attachEvent)
+      window.attachEvent("onload", loadScriptPostRender);
+    else window.onload = loadScriptPostRender;
+  </script>
+</html>
