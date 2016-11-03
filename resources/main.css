@@ -299,6 +299,11 @@ SMALL TABLETS/LARGE PHONES
 		padding: 1rem 0 0.25rem;
 	}
 
+	#page .contact {
+		font-size: 2rem;
+		vertical-align: middle;
+	}
+
 }/*END 550px QUERY*/
 
 
@@ -367,10 +372,6 @@ LARGER TABLETS
 		line-height: 1.25;
 	}
 
-	#page.services {
-
-	}
-
 	/***************
 	FOOTER
 	***************/
@@ -403,6 +404,4 @@ FULL SIZE
 		font-size: 1.75rem;
 		padding-top: 0.75rem;
 	}
-
-
 }
