@@ -21,17 +21,24 @@
       <header>
         <noscript><div id="noscript">JavaScript is turned off. Please <a href="http://enable-javascript.com/" target="_blank">enable JavaScript</a> for full use of this site.</div></noscript>
         <div id="masthead">
-          <div id="heading">
-            <a href="/"><h1><i class="fa fa-lightbulb-o" aria-hidden="true"></i> {{ site.name }}</h1></a>
-          </div>
-          {% if site.slogan %}
-          <div id=slogan>
-            {{ site.slogan }}
-          </div>
-          {% endif %}
-          <div id="contactNo">
-            <h1><a href="tel:{{ site.phone }}"><i class="fa fa-phone-square call" aria-hidden="false"></i><noscript>Ph:</noscript> {{ site.phone }}</a></h1>
-          </div>
+          <div id="headingContainer">
+            <div id="heading">
+              <a href="/"><h1><i class="fa fa-lightbulb-o" aria-hidden="true"></i> {{ site.name }}</h1></a>
+            </div>
+            {% if site.slogan %}
+            <div id=slogan>
+              {{ site.slogan }}
+            </div>
+            {% endif %}
+          </div> <!-- /headingContainer -->
+          <div id=contactContainer>
+            <div id="callNow">
+              Call now for a free quote!
+            </div>
+            <div id="contactNo">
+              <h1><a href="tel:{{ site.phone }}"><i class="fa fa-phone-square call" aria-hidden="false"></i><noscript>Ph:</noscript> {{ site.phone }}</a></h1>
+            </div>
+        </div> <!-- /contactContainer -->
         </div>
         <nav id="mainMenu">
           <div id="navIcon">

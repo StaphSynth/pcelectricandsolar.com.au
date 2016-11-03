@@ -83,12 +83,21 @@ body {
 
 #pageWrapper {
 	height: 100%;
-	padding: 1.25%;
+	padding: 0 1.25%;
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-ms-flex-direction: column;
 	flex-direction: column;
+	max-width: 1024px;
+	margin: 0 auto;
 }
 
 #contentWrapper {
+	-webkit-box-flex: 1;
+	-ms-flex-positive: 1;
 	flex-grow: 1;
 }
 
@@ -102,7 +111,7 @@ FONTS
 	font-family: 'Days One', sans-serif;
 }
 
-#slogan, h4 {
+#slogan, h4, #callNow {
 	font-family: 'Satisfy', cursive;
 }
 
@@ -143,8 +152,8 @@ footer,
 
 #masthead h1,
 #slogan {
-	color: {{ site.primary-colour }};
 	font-size: 1.5rem;
+	color: {{ site.primary-colour }};
 }
 
 #slogan {
@@ -161,6 +170,11 @@ footer,
 
 .call {
 	color: green;
+}
+
+#callNow {
+	display: none;
+	color: {{ site.primary-colour }};
 }
 
 
@@ -183,14 +197,17 @@ NAVIGATION
 
 #navIcon,
 #mainMenu ul li {
+	-webkit-transition: 0.3s;
+	transition: 0.3s;
 	color: {{ site.primary-colour }};
 }
 
-#mainMenu ul li .selected,
-#mainMenu ul li:hover {
-	background-color: #142553;
+#mainMenu ul li:hover,
+#mainMenu ul li .selected {
 	color: white;
+	background-color: {{ site.primary-colour }};
 }
+
 
 /*=================================
 MAIN CONTENT
@@ -207,6 +224,7 @@ MAIN CONTENT
 
 #page .services {
 	padding: 0.75rem 0;
+	line-height: 1.125;
 }
 
 /*=================================
@@ -221,6 +239,170 @@ footer {
 }
 
 footer a {
-	color: #142553!important;
 	text-decoration: underline;
+	color: {{ site.primary-colour }}!important;
+}
+
+
+/*=================================
+RESPONSIVE CSS
+=================================*/
+
+/*-------------------------
+SMALL TABLETS/LARGE PHONES
+-------------------------*/
+@media screen and (min-width: 550px) {
+
+	/***************
+	MASTHEAD
+	***************/
+
+	#masthead h1 {
+		font-size: 1.8rem;
+	}
+
+	/***************
+	NAVIGATION
+	***************/
+
+	#mainMenu {
+		margin: 2rem 0 0;
+		background-color: transparent;
+	}
+
+	#navIcon {
+		display: none;
+	}
+
+	#mainMenu ul{
+		display: block;
+	}
+
+	#mainMenu ul li {
+		display: inline-block;
+		background-color: {{ site.textbg }}
+	}
+
+	/***************
+	MAIN CONTENT
+	***************/
+
+	#page {
+		border-top: solid 10px {{ site.primary-colour }};
+	}
+
+	#page p {
+		line-height: 1.25;
+	}
+
+	h3 {
+		padding: 1rem 0 0.25rem;
+	}
+
+}/*END 550px QUERY*/
+
+
+/*-------------------------
+LARGER TABLETS
+-------------------------*/
+@media screen and (min-width: 850px) {
+
+	/***************
+	MASTHEAD
+	***************/
+
+	#masthead {
+		padding: 1rem 0;
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
+		-ms-flex-flow: row nowrap;
+		flex-flow: row nowrap;
+		-webkit-box-pack: justify;
+		-ms-flex-pack: justify;
+		justify-content: space-between;
+	}
+
+	#masthead h1 {
+		font-size: 2rem;
+	}
+
+	#slogan {
+		padding-top: 0.5rem;
+	}
+
+	#contactNo {
+		padding: 0.5rem 0 1rem;
+	}
+
+	#contactNo a {
+		font-size: 2.25rem;
+	}
+
+	#callNow {
+		display: block;
+		font-size: 1.25rem;
+		padding-top: 0.5rem;
+	}
+
+	#headingContainer,
+	#contactContainer {
+		padding: 1rem 1.5rem;
+	}
+
+	/***************
+	MAINT CONTENT
+	***************/
+
+	#page h3 {
+		font-size: 1.33rem;
+	}
+
+	#page p,
+	.services {
+		font-size: 1.2rem;
+	}
+
+	.services {
+		line-height: 1.25;
+	}
+
+	#page.services {
+
+	}
+
+	/***************
+	FOOTER
+	***************/
+
+	footer {
+		font-size: 1rem;
+	}
+
+}/*END 850px QUERY*/
+
+/*-------------------------
+FULL SIZE
+-------------------------*/
+@media screen and (min-width: 1024px) {
+
+	/***************
+	MASTHEAD
+	***************/
+
+	#headingContainer,
+	#contactContainer {
+		padding: 1rem 2.5rem;
+	}
+
+	#masthead h1 {
+		font-size: 2.5rem;
+	}
+
+	#slogan {
+		font-size: 1.75rem;
+		padding-top: 0.75rem;
+	}
+
+
 }

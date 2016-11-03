@@ -26,7 +26,8 @@ background: /resources/img/solar-panel.jpg
 ## layout ##
 max-width: 1024
 primary-colour: "#142553"
-
+#text area background colour
+textbg: "rgba(255,255,255,0.8)"
 
 ## jekyll control ##
 markdown: kramdown
