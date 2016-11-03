@@ -1,5 +1,7 @@
+---
+---
 /*==================================================
-main.css for pcelectricandsolar.com.au
+main.css for pcelectricalandsolar.com.au
 By David Allen
 ===================================================*/
 
@@ -60,4 +62,165 @@ q:before, q:after {
 table {
 	border-collapse: collapse;
 	border-spacing: 0;
+}
+
+a, a:visited {
+	text-decoration: none;
+	color: inherit;
+}
+
+
+/*=================================
+GENERAL
+=================================*/
+
+body {
+	background-image: url('{{ site.background }}');
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+#pageWrapper {
+	height: 100%;
+	padding: 1.25%;
+	display: flex;
+	flex-direction: column;
+}
+
+#contentWrapper {
+	flex-grow: 1;
+}
+
+
+
+/*=================================
+FONTS
+=================================*/
+
+#masthead, #mainMenu, h3 {
+	font-family: 'Days One', sans-serif;
+}
+
+#slogan, h4 {
+	font-family: 'Satisfy', cursive;
+}
+
+footer,
+#page {
+	font-family: 'Open Sans', sans-serif;
+}
+
+
+/*=================================
+MASTHEAD
+=================================*/
+
+#noscript {
+	text-align: center;
+	color: white;
+	padding: 0.5rem;
+	background-color: {{ site.primary-colour }};
+}
+
+#noscript a {
+	text-decoration: underline;
+}
+
+#masthead {
+	text-align: center;
+	padding: 1rem 0 0.5rem;
+	/*max-width: {{ site.max-width }}px;*/
+	/*margin: 0 auto;*/
+}
+
+#page,
+footer,
+#masthead,
+#mainMenu {
+	background: rgba(255,255,255,0.8);
+}
+
+#masthead h1,
+#slogan {
+	color: {{ site.primary-colour }};
+	font-size: 1.5rem;
+}
+
+#slogan {
+	padding-top: 0.33rem;
+}
+
+#contactNo {
+	padding: 1rem 0;
+}
+
+#contactNo a {
+	font-size: 1.75rem;
+}
+
+.call {
+	color: green;
+}
+
+
+/*=================================
+NAVIGATION
+=================================*/
+
+#mainMenu {
+	margin: 1rem 0;
+}
+
+#mainMenu a {
+	display: block;
+	padding: 1em;
+}
+
+#mainMenu ul {
+	display: none;
+}
+
+#navIcon,
+#mainMenu ul li {
+	color: {{ site.primary-colour }};
+}
+
+#mainMenu ul li .selected,
+#mainMenu ul li:hover {
+	background-color: #142553;
+	color: white;
+}
+
+/*=================================
+MAIN CONTENT
+=================================*/
+
+#page {
+	padding: 0.5rem;
+}
+
+#page p {
+	padding: 0.5rem 0 0.75rem;
+	line-height: 1.125;
+}
+
+#page .services {
+	padding: 0.75rem 0;
+}
+
+/*=================================
+FOOTER
+=================================*/
+
+footer {
+	text-align: center;
+	font-size: 0.8rem;
+	padding: 0.5rem;
+	margin-top: 1rem;
+}
+
+footer a {
+	color: #142553!important;
+	text-decoration: underline;
 }
