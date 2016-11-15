@@ -177,6 +177,10 @@ footer,
 	color: {{ site.primary-colour }};
 }
 
+#contactNo .desk {
+	display: none;
+}
+
 
 /*=================================
 NAVIGATION
@@ -220,6 +224,11 @@ MAIN CONTENT
 #page p {
 	padding: 0.5rem 0 0.75rem;
 	line-height: 1.125;
+}
+
+#page a {
+	text-decoration: underline;
+	color: {{ site.primary-colour }}!important;
 }
 
 #page .services {
@@ -340,7 +349,8 @@ LARGER TABLETS
 		padding: 0.5rem 0 1rem;
 	}
 
-	#contactNo a {
+	#contactNo a,
+	#contactNo .desk {
 		font-size: 2.25rem;
 	}
 
@@ -403,5 +413,16 @@ FULL SIZE
 	#slogan {
 		font-size: 1.75rem;
 		padding-top: 0.75rem;
+	}
+
+	/*Remove phone number link for
+	desktop browsers that don't know
+	what to do with it*/
+	#contactNo .desk {
+		display: block;
+	}
+
+	#contactNo .mob {
+		display: none;
 	}
 }
