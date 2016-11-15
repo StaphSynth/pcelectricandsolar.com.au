@@ -19,8 +19,11 @@ fontawesome: https://use.fontawesome.com/0523816ffe.js
 fonts: Open+Sans|Days+One|Satisfy
 #jQuery
 jquery: https://code.jquery.com/jquery-1.11.0.min.js
-#background image
-background: /resources/img/solar-panel.jpg
+## background image ##
+#small
+background-small: /resources/img/solar-small.jpg
+#large
+background-large: /resources/img/solar-large.jpg
 
 
 ## layout ##
