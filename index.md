@@ -4,9 +4,9 @@
   navId: 10
 ---
 
-### For all your dommestic and commercial electrical needs
+### For all your dommestic, solar, and small commercial electrical needs
 
-Whether it be re-wiring that light switch that never worked properly, or installing a brand new state-of-the-art solar generation system, PC Electrical and Solar can help.
+We do new installations, rewiring, repairs and ongoing maintinace.
 
 ### Fully licenced and insured
 
@@ -14,4 +14,4 @@ Rest easy, knowing that all work is carried out to the highest possible standard
 
 ### All work guaranteed
 
-With high standards of workmanship, we stand by our proven track record and guarantee all electrical work.
+We provide a high standard of workmanship and guarantee all of our electrical work.

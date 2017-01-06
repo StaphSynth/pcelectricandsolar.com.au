@@ -10,12 +10,12 @@
 <ul class="services">
   <li>&bull; Re-wiring</li>
   <li>&bull; Solar installations and repairs</li>
-  <li>&bull; Light and fan fittings</li>
+  <li>&bull; Installation of new power points and light fitting</li>
   <li>&bull; New home wiring</li>
-  <li>&bull; Security and network cable runs</li>
-  <li>&bull; Blown fuse repair</li>
+  <li>&bull; Replacement of faulty electrial fittings</li>
+  <li>&bull; New fan and heater installations</li>
 </ul>
 
 ### On Time and No Mess
 
-We arrive on time, carry out the work required, and clean up afterwards; leaving you free to focus on running your home or business.
+We arrive on time, carry out the work to a professional standard, and clean up afterwards.

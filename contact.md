@@ -7,10 +7,8 @@
 
 ### Contact Us
 
-For immediate answers to queries, the best way of contacting us is by phone.
+Please contact us by mobile phone during business hours or anytime via Email.
 
 <i class="fa fa-phone-square contact" aria-hidden="true"></i><noscript>Ph:</noscript> {{ site.phone }}
 
 <i class="fa fa-envelope-square contact" aria-hidden="true"></i><noscript>Email:</noscript> {{ site.email }}
-
-Note to Peter: We can replace the email address here with a contact form if you want. This might reduce the ammount of spam, although there'll be slightly more customer irritation at having to fill out a form. It's obviously up to you.
