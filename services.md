@@ -10,7 +10,7 @@
 <ul class="services">
   <li>&bull; Re-wiring</li>
   <li>&bull; Solar installations and repairs</li>
-  <li>&bull; Installation of new power points and light fitting</li>
+  <li>&bull; Installation of new power points and light fittings</li>
   <li>&bull; New home wiring</li>
   <li>&bull; Replacement of faulty electrial fittings</li>
   <li>&bull; New fan and heater installations</li>

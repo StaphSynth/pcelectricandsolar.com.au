@@ -7,7 +7,7 @@
 
 ### Contact Us
 
-Please contact us by mobile phone during business hours or anytime via Email.
+Please contact us by mobile phone during business hours or any time via Email.
 
 <i class="fa fa-phone-square contact" aria-hidden="true"></i><noscript>Ph:</noscript> {{ site.phone }}
 
